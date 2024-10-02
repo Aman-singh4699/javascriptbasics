@@ -7,10 +7,20 @@
 </head>
 <body>
     <h1>Chai aur Javascript</h1>
+    <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
 <script>
-    
+    const sayDate = function(str){
+        console.log(str, date.now())
+    }
+    let interval;
+    document.querySelector('#start').addEventListener('click', function(sayDate){
+        interval = setInterval(sayDate, 1000, "hello")
+    })
 
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(interval)
+    })
 </script>
 </html>
