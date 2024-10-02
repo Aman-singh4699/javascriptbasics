@@ -12,15 +12,30 @@
 </body>
 <script>
     const sayDate = function(str){
-        console.log(str, date.now())
+        console.log(str, Date.now())
     }
     let interval;
-    document.querySelector('#start').addEventListener('click', function(sayDate){
-        interval = setInterval(sayDate, 1000, "hello")
+    document.querySelector('#start').addEventListener('click', function(e){
+        interval = setInterval(sayDate, 1000, `hello ${e.type}`)
     })
 
     document.querySelector('#stop').addEventListener('click', function(){
-        clearInterval(interval)
+        clearInterval(interval);
+        console.log("button clicked")
     })
+
+    // another method
+
+    // let interval;
+    // const toStart = function(){
+    //     interval = setInterval(sayDate, 1000, "hello")
+    // }
+    // document.querySelector('#start').addEventListener('click', toStart)
+
+    // document.querySelector("#stop").addEventListener('click', function(){
+    //     clearInterval(interval)
+    //     console.log("stop Button clicked")
+    // })
+
 </script>
 </html>

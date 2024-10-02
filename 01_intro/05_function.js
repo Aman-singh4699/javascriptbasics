@@ -24,3 +24,9 @@ function handleObject(anyobject){
 }
 handleObject(user)
 
+let print;
+function toPrint(){
+    print = "good work"
+}
+toPrint()
+console.log(print)
