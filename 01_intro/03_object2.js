@@ -20,7 +20,10 @@ const obj2 = {3:"c", 4:"d"}
 
 // const obj3 = {obj1, obj2}
 const obj3 = Object.assign({}, obj1, obj2);
+// from above obj1 and obj2 remain unchanged
 const obj4 = Object.assign(obj1, obj2);
+// from above obj1 takes all property of obj2 
+
 console.log(obj3);
 console.log(obj4);
 
