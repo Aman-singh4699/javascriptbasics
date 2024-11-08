@@ -29,3 +29,8 @@ newAman.logMe()
 
 console.log(aman instanceof teacher)
 console.log(aman instanceof user)
+
+
+
+
+
