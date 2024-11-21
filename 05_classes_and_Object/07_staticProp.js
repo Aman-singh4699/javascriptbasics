@@ -31,3 +31,4 @@ console.log(newUser.createId())
 // here static function is making restriction to stop everyone
 // to access creatId function so when static is written and we 
 // we call the function then it will show error
+
